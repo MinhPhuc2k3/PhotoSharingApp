@@ -1,0 +1,19 @@
+.main-topbar-buffer {
+  margin-top: 70px;
+}
+
+.main-grid-item {
+  height: calc(100vh - 85px);
+  padding: 10px;
+  bottom: 0;
+}
+
+#SideBar{
+  position: fixed;
+  top: 70px;
+  left: 0;
+}
+
+#Content{
+  margin-top: 70px;   
+}

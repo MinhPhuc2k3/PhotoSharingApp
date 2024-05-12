@@ -1,0 +1,16 @@
+#username {
+    --scaleX: 1.05;
+    --rotate: -2deg;
+
+    color: #2772c3;
+    font-size: 35px;
+    text-decoration: none;
+    position: relative;
+    cursor: pointer;
+}
+
+#list {
+    background-color: azure;
+    border-radius: 5%;
+    margin: 4px 4px;
+}

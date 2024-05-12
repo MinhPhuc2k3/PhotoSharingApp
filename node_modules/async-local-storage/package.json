@@ -1,0 +1,46 @@
+{
+  "name": "async-local-storage",
+  "description": "Get the value like thread-local storage in threaded programming",
+  "version": "2.3.1",
+  "author": "Tree Xie <vicansocanbico@gmail.com>",
+  "keywords": [
+    "threadlocal",
+    "call chain"
+  ],
+  "scripts": {
+    "size": "t=\"$(npm pack .)\"; wc -c \"${t}\"; tar tvf \"${t}\"; rm \"${t}\";",
+    "commitmsg": "validate-commit-msg",
+    "precommit": "npm run lint",
+    "format": "node node_modules/.bin/prettier --write *.js",
+    "jest": "node node_modules/.bin/jest --coverage *.test.js",
+    "lint": "node ./node_modules/.bin/eslint *.js",
+    "test": "npm run lint && npm run jest"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vicanso/async-local-storage.git"
+  },
+  "main": "./als.js",
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.17.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.8.0",
+    "husky": "^0.14.3",
+    "ioredis": "^3.2.2",
+    "jest": "^24.8.0",
+    "koa": "^2.5.1",
+    "koa-session": "^5.8.1",
+    "prettier": "^1.10.2",
+    "superagent": "^3.8.3",
+    "supertest": "^3.1.0",
+    "validate-commit-msg": "^2.14.0"
+  },
+  "dependencies": {
+    "nano-seconds": "^1.2.2"
+  }
+}
